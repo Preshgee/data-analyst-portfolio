@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Breast Cancer Patients Outcome — Precious Ukah</title>
+  <meta name="description" content="Detailed SQL and Power BI analysis of Breast Cancer Patients Outcome across 4,024 patient records by Precious Ukah." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-mark">
+        <span class="brand-dot" aria-hidden="true"></span>
+        Precious Ukah
+      </a>
+      <nav class="site-nav" aria-label="Primary Navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#tools">Tools</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#experience">Experience &amp; Education</a>
+        <a href="index.html#connect" class="nav-cta">Let&rsquo;s Connect</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Project Header -->
+    <section class="detail-hero">
+      <div class="container">
+        <a href="index.html#projects" class="breadcrumb">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+          Back to All Projects
+        </a>
+
+        <div class="project-tools">
+          <span class="tag">SQL</span>
+          <span class="tag">Power BI</span>
+        </div>
+
+        <h1 class="detail-title">Breast Cancer Patients Outcome</h1>
+        <p class="detail-subtitle">
+          A clinical outcome exploration using SQL and Power BI to evaluate survival duration, mortality rates, cancer stage progression, and hormone receptor profiles across 4,024 patient records.
+        </p>
+
+        <!-- Complete Metrics Strip (from provided insights & dashboard KPI cards) -->
+        <div class="metrics-strip" aria-label="Key Project Metrics">
+          <div class="strip-card">
+            <div class="strip-value">4,024</div>
+            <div class="strip-label">Total Patients</div>
+          </div>
+          <div class="strip-card">
+            <div class="strip-value">84.7%</div>
+            <div class="strip-label">Overall Survival Rate</div>
+          </div>
+          <div class="strip-card">
+            <div class="strip-value">15.3%</div>
+            <div class="strip-label">Mortality Rate</div>
+          </div>
+          <div class="strip-card">
+            <div class="strip-value">90.6 &rarr; 40.1</div>
+            <div class="strip-label">Avg Survival Mos (IIA &rarr; IIIC)</div>
+          </div>
+          <div class="strip-card">
+            <div class="strip-value">93.3%</div>
+            <div class="strip-label">ER+ Hormone Status</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Full-Size Dashboard Showcase -->
+    <section class="section">
+      <div class="container">
+        <span class="section-kicker">Interactive Dashboard View</span>
+        <h2 class="section-title">Power BI Report Overview</h2>
+
+        <figure class="dashboard-showcase">
+          <img src="assets/breast-cancer-dashboard.jpg" alt="Full Power BI Breast Cancer Patients Outcome Dashboard displaying KPI summary cards, Tumor Size by Survival Months scatter plot, Estrogen and Progesterone hormone receptor donut charts, Patients by Cancer Stage bar chart, Patients Status by Age Group column chart, and interactive slicers." width="633" height="363" />
+          <figcaption class="showcase-caption">
+            <span>Tools: SQL &amp; Power BI</span>
+            <span>Cohort Size: 4,024 Patients &bull; Avg Tumor Size: 30.5 &bull; Overall Avg Survival: 71.30 Months</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Key Findings & Insights -->
+    <section class="section">
+      <div class="container">
+        <span class="section-kicker">Analytical Takeaways</span>
+        <h2 class="section-title">Key Findings &amp; Insights</h2>
+
+        <div class="findings-grid">
+          <article class="finding-card">
+            <span class="finding-num">FINDING 01</span>
+            <h3 class="finding-heading">Stage-Driven Survival Drop</h3>
+            <p class="finding-text">
+              Average survival duration declines substantially as cancer stage advances, moving from <strong>90.6 months at Stage IIA</strong> down to <strong>40.1 months at Stage IIIC</strong> (compared to an overall cohort average of 71.30 months).
+            </p>
+          </article>
+
+          <article class="finding-card">
+            <span class="finding-num">FINDING 02</span>
+            <h3 class="finding-heading">Estrogen Receptor Prevalence</h3>
+            <p class="finding-text">
+              <strong>93.3% of patients were Estrogen Receptor positive (ER+)</strong>, and hormone receptor status tracked closely with patient survival outcomes across the cohort.
+            </p>
+          </article>
+
+          <article class="finding-card">
+            <span class="finding-num">FINDING 03</span>
+            <h3 class="finding-heading">Cohort Survival &amp; Mortality Split</h3>
+            <p class="finding-text">
+              Across all 4,024 analyzed patients, overall survival stood at <strong>84.7%</strong> while mortality accounted for <strong>15.3%</strong>, segmented interactively by race, T stage, status, and regional node counts.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Navigation & Connect -->
+    <section id="connect" class="connect-band">
+      <div class="container connect-inner">
+        <div>
+          <span class="section-kicker" style="color: #E89B7B;">Next Steps</span>
+          <h2 class="connect-title">Interested in this analysis?</h2>
+          <p class="connect-sub">
+            Reach out to discuss SQL data modeling, Power BI dashboard design, or data analytics opportunities.
+          </p>
+        </div>
+
+        <div class="connect-actions">
+          <a href="index.html#projects" class="btn btn-light-outline">&larr; Back to Portfolio</a>
+          <a href="mailto:okorepreciousu@gmail.com" class="btn btn-light">Email Precious</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; 2026 Precious Ukah. All rights reserved.</span>
+      <span>Built with semantic HTML &amp; CSS</span>
+    </div>
+  </footer>
+
+</body>
+</html>
